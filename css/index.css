@@ -1,0 +1,107 @@
+
+:root{
+    --deeper:#0A2647;
+    --deep:#144272;
+    --sky:#205295;
+    --skyer:#2C74B3;
+    --base:#2C74B3;
+
+}
+
+
+
+.speakers{
+    border: 4px solid var(--skyer);
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, var(--base) , var(--deep),var(--base));
+   
+    
+}
+.speaker{
+    border: 2px solid var(--sky);
+    text-align: center;
+    background-color: var(--deeper);
+}
+marquee{
+    display: flex;
+    background-color:var(--deeper);
+    justify-content: space-around;
+}
+.eng{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-right:#205295 solid 1px;
+}
+.speakersinfo{
+    padding: 20px;
+    /* border: 4px solid var(--skyer); */
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+
+
+.speaker h3 a{
+    color:var(--base);
+    text-decoration: none;
+}
+.speaker h3 a:hover{
+    color: white;
+}
+.invitation{
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+	background-image: linear-gradient(to right, var(--deep) , var(--deeper),var(--deep));
+	overflow: hidden;
+		border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 3px solid var(--sky);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: invitation;
+    animation-duration: 1s;
+    animation-delay: -1;
+    animation-iteration-count: infinite;
+
+}
+@keyframes invitation {
+    0%   {    background-image: linear-gradient(to bottom right, var(--deeper),var(--deep) ,var(--sky), var(--skyer));
+    }
+  25%  {    background-image: linear-gradient(to bottom right, var(--skyer),var(--deeper) ,var(--deep), var(--sky));
+  }
+  50%  {    background-image: linear-gradient(to bottom right, var(--sky),var(--skyer) ,var(--deeper), var(--deep));
+  }
+  100% {    background-image: linear-gradient(to bottom right, var(--deep),var(--sky) ,var(--skyer), var(--deeper));
+  }
+    
+}
+.invitation h3{
+    
+    
+
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:950px){
+    .speakers{
+        display: block;
+    }
+    .invitation{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+

@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --deeper:#0A2647;
+    --deep:#144272;
+    --sky:#205295;
+    --skyer:#2C74B3;
+    --base:#2C74B3;
+
+}
+
+body{
+    background-image:linear-gradient(to right, var(--base) , var(--deep),var(--base));;
+}
+
+header{
+    border-bottom: solid 2px black;
+    text-align: center;
+    /* background: var(--base); */
+    overflow: hidden;
+    
+    background-image: linear-gradient(to right, var(--base) , var(--deep),var(--base));
+    height: 19vh;
+    width: 100%;
+    margin-top: 0px;
+    color: white;
+    font-size: 30px;
+}
+header .ieee{
+    
+    float:right ;
+}
+
+.ieee img{
+    height: 15vh;
+    
+   
+}
+nav button{
+    background: rgb(0, 0, 0);
+    border: none;
+    padding: 20px;
+}
+
+nav{
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content:center;
+    
+}
+li{
+    list-style: none;
+   
+}
+
+nav button a{
+    color:rgb(51, 159, 222); 
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav button a:hover{
+    font-weight: bolder;
+    color:rgb(255, 255, 255);
+  
+}
+.purpose {
+    text-align: center;
+    background-image: linear-gradient(to right, var(--base) , var(--deep),var(--base));
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: larger;
+   
+    
+}
+ .purpose h2{
+    background-color: var(--deeper);
+    margin-top: 0;
+ }
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  background: var(--deeper);
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: var(--deep);
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid var(--deep);
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  var(--deep);
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: var(--deep);
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: var(--deep);
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: var(--deep);
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+.media-icons img{
+    background: var(--deep);
+}
